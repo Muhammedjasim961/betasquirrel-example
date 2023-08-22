@@ -1,0 +1,213 @@
+body  {
+    background-color: #ececec;
+    margin: 0 auto;
+}
+#navbar {
+    background-color:#575154;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom:1px solid #ececec;
+}
+#logo-container {
+    width: 300px;
+    float: left;
+    display: flex; 
+    justify-content: flex-start;
+    padding: 15px;
+}
+#logo-container img {
+    height: 60px;
+    margin-right: 15px;
+}
+#logo-container h2 {
+     display: inline-block;
+     color: #fff;
+}
+
+#profile-container{
+    width: auto;
+    float: right;
+}
+#profile-container > img {
+    height: 60px; 
+    border-radius: 50%;
+}
+.main {
+    height: calc(100vh - 81px);
+    position: relative;
+    overflow: hidden;
+}
+#sidebar {
+    background-color: #575154;
+    height: 100%;
+    width: 150px;
+    float: left;
+}
+
+#container  h2 {
+    margin: 0 0 15px 0; 
+    text-decoration: underline;
+   
+}  
+#container {
+    padding: 15px;
+    float: left;
+    width: calc(100vw - 180px);
+}
+.green-bg {
+    background-color: #03C775;
+}
+.purple-bg {
+    background-color:#B181EF ;
+}
+.red-bg {
+    background-color: #EF441A;
+}
+.cyan-bg {
+    background-color:#2DB7F4 ;
+}
+#tile-container, 
+#circle-container {
+    display: flex;
+}
+#tile-container  {
+    margin-bottom: 15px;
+}
+.tile {
+    height: 200px;
+}
+.tile h2, 
+.tile h3 {
+    color: white; 
+}
+.tile, 
+.circle,
+.chart {
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#tile-container h2 {
+text-decoration: none;
+ }  
+.circle,
+.chart {
+    height: calc((100vw - 180px) / 4);
+}
+.circle {
+border-radius: 50%;
+ }   
+#tile-container div, 
+#circle-container div {
+    margin-right: 15px;
+}
+#tile-container > div:last-child,
+ #circle-container > div:last-child {
+    margin-right : 0;
+}
+.inner-one {
+width: 70%;
+height: 70%;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.inner-one h2,
+.inner-four h2 {
+color: #fff;
+}
+.inner-one  {
+    text-decoration: none;
+}
+.inner-two {
+    width: 90%;
+    height: 90%;
+    border-radius: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    }
+    .inner-three {
+        width: 90%;
+        height: 90%;
+        border-radius: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ff7262;
+        }
+    .inner-four {
+        width: 70%;
+        height: 70%;
+        border-radius: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+         }
+    .bar {
+        width: 15px;
+        position: absolute;
+      }     
+    .chart {
+        position: relative;
+        overflow: hidden;
+      } 
+      .chart div {
+        bottom: 0;
+      }
+    .one {
+        left: 0;
+        height: calc((100%) - 30px);
+      }
+    .two {
+        left: 25px;
+        height: calc((100%) - 10px);
+      }
+    .three {
+       left: 50px;
+       height: calc((100%) - 70px);
+      }
+    .four {
+        left: 75px;
+        height: calc((100%) - 100px);
+    } 
+    .five {
+        left: 100px;
+         height: calc((100%) - 20px);
+
+    }
+    .six {
+        left: 125px;
+        height: calc((100%) - 50px);
+    }
+     .line {
+        width: 100%;
+        height: 15px;
+        background-color: #625b5b;
+        position: absolute;
+     }   
+     #sidebar nav {
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        padding: 15px 30px 30px 30px;
+
+     }
+     #sidebar nav a {
+        color: #fff;
+        padding: 5px;
+     }
+     #sidebar nav a:first-child {
+        padding-top: 0;
+     }
+     #sidebar nav a.active {
+        color: blue;
+        text-decoration: none;
+     }
+     
