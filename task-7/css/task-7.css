@@ -1,0 +1,29 @@
+.navbar {
+    background-color: #585551;
+}
+.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff !important;
+}
+.navbar-brand img {
+    margin-right: 10px;
+}
+.profile {
+    background-color: #04aa6d !important;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.2;
+    color: #fff;
+}
+.navbar-nav,.nav-item,.nav-link {
+      color: #fff;
+}
+.navbar-nav .nav-item .nav-link.active {
+      color: green;
+}
