@@ -6,7 +6,7 @@ body {
 #sidebar{
     background-color: #013048;
     width: 35vw;
-    height: 160vh;
+    height: fit-content;
     overflow: hidden;
    
 }
@@ -87,12 +87,7 @@ body {
     text-transform: uppercase;
     font-weight: 600;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-@media (max-width: 576px) {
-    #sidebar {
-        width: 600px;
-    }
-}   
+} 
 .skills-items,p{
     color: #848c99;
     font-weight: 500;
@@ -100,4 +95,56 @@ body {
 }
 .skills-items,ul,li{
     line-height: 2rem;
+}
+.pref{
+    font-weight: 400;
+    margin-left: 5px;
+    display: inline-flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+}
+.cardless-body {
+    height: fit-content;
+}
+
+@media only screen and (max-width: 767px) {
+    #sidebar{
+        width: 100%;
+    }
+    .cardless-body {
+        width: 100%;
+        padding: 4px;
+    }
+    #sidebar img {
+          height: 35%;
+          width: 25%;
+          margin-left: 200px;
+    }  
+     .profile,h1 {
+        margin-right: 40px;
+     }
+}
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+    
+   .cardless-body {
+        width: 56vw;   
+       float: right;
+   }
+   #sidebar {
+    width: 40vw;
+    height: 1350px;
+   }
+    #sidebar img{
+        align-items: center;
+        justify-content: center;
+        display: block;
+        margin-left: 50px;        
+    }
+     .profile,h1{
+        margin-left: 20px;    
+   }
+   .web{
+    margin-right:95px;
+  
+   }
+
 }
